@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Order Confirmation</title>
+    <link rel="stylesheet" href="css/cart.css" />
+</head>
+
+<body onload="loadOrderDetails()">
+    <header class="navbar">
+        <div class="logo-container">
+            <div class="logo">ShopEase</div>
+            <div class="logo-subtext">Formerly Alice + Whittles</div>
+        </div>
+
+        <div class="profile">
+            <span class="profile-icon">👤</span>
+            <span class="profile-name">ADMIN</span>
+            <div class="profile-menu">
+                <a href="profile.html">View Profile</a>
+                <a href="login.html">Logout</a>
+            </div>
+        </div>
+    </header>
+
+    <a href="home.html" class="back-home-btn">
+        ← Back to Home
+    </a>
+
+    <div class="cart-container">
+        <h2>✅ Order Successful!</h2>
+        <p>Thank you for your purchase. Here are your order details:</p>
+
+        <h3>Order Date:</h3>
+  <p id="order-date"></p>
+
+        <h3>Items:</h3>
+        <div id="ordered-items"></div>
+
+        <h3>Total Paid: ₱<span id="ordered-total">0</span></h3>
+
+        <button onclick="window.print()" class="print-btn">🖨️ Print Receipt</button>
+  <br><br>
+    </div>
+
+    <script src="js/order.js"></script>
+</body>
+
+</html>

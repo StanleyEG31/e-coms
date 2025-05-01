@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ShopEase - Home</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Top Navbar -->
+  <header class="navbar">
+    <div class="logo-container">
+      <div class="logo">ShopEase</div>
+      <div class="logo-subtext">Formerly Alice + Whittles</div>
+    </div>
+    <div class="search-cart">
+      <input type="text" placeholder="Search products..." class="search-input" />
+      <a href="cart.html" class="cart-icon">🛒</a>
+    </div>
+    <div class="profile">
+      <span class="profile-icon">👤</span> 
+      <span class="profile-name">ADMIN</span>
+      <div class="profile-menu">
+        <a href="profile.html">View Profile</a>
+        <a href="index.html">Logout</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Categories Horizontal Scroll -->
+  <section class="categories-section">
+    <h2>Categories</h2>
+    <div class="categories-scroll">
+      <a href="categories/shoes.html" class="category">👟 Shoes</a>
+      <a href="categories/clothing.html" class="category">👗 Clothing</a>
+      <a href="categories/phones.html" class="category">📱 Phones</a>
+      <a href="categories/beauty.html" class="category">💄 Beauty</a>
+      <a href="categories/bags.html" class="category">👜 Bags</a>
+      <a href="categories/gadgets.html" class="category">🎮 Gadgets</a>
+    </div>
+  </section>
+
+  <section class="hero">
+    <div>
+      <section class="text">
+        <h1>Our Summer Sale Is Finally Here!</h1>
+        <p>20% off site wide.</p>
+      </section>
+    </div>
+  </section>
+
+  <!-- Product List -->
+  <section class="product-list">
+    <h2>Recommended for You</h2>
+    <div class="product-grid">
+      <div class="product-card" onclick="location.href='product.html?id=1'">
+        <img src="images/headphones.png" alt="Wireless Headphones">
+        <h4>Wireless Headphones</h4>
+        <p>₱899</p>
+      </div>
+  
+      <div class="product-card" onclick="location.href='product.html?id=2'">
+        <img src="images/sneakers.png" alt="Stylish Sneakers">
+        <h4>Stylish Sneakers</h4>
+        <p>₱1,299</p>
+      </div>
+  
+      <div class="product-card" onclick="location.href='product.html?id=3'">
+        <img src="images/smartphone.png" alt="Smartphone Case">
+        <h4>Smartphone Case</h4>
+        <p>₱199</p>
+      </div>
+    </div>
+  </section>
+  
+
+</body>
+</html>

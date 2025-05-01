@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Your Cart</title>
+  <link rel="stylesheet" href="css/cart.css" />
+</head>
+
+<body onload="loadCart()">
+  <header class="navbar">
+    <div class="logo-container">
+      <div class="logo">ShopEase</div>
+      <div class="logo-subtext">Formerly Alice + Whittles</div>
+    </div>
+    <div class="search-cart">
+      <input type="text" placeholder="Search products..." class="search-input" />
+      <a href="cart.html" class="cart-icon">🛒</a>
+    </div>
+    <div class="profile">
+      <span class="profile-icon">👤</span>
+      <span class="profile-name">ADMIN</span>
+      <div class="profile-menu">
+        <a href="profile.html">View Profile</a>
+        <a href="login.html">Logout</a>
+      </div>
+    </div>
+  </header>
+
+  <a href="home.html" class="back-home-btn">
+    ← Back Home
+  </a>
+  <div class="cart-container">
+  <h2>Shopping Cart</h2>
+  <div id="cart-items"></div>
+  <h2>Total: ₱<span id="cart-total">0</span></h2>
+  </div>
+  <button onclick="placeOrder()" class="place-order-btn">Place Order</button>
+  <script src="js/cart.js"></script>
+</body>
+
+</html>

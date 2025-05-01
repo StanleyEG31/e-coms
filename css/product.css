@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+  }
+  .product-details {
+    padding: 20px;
+    background-color: white;
+    max-width: 600px;
+    margin: 50px auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .product-details img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+  }
+
+  .navbar {
+    background: #113322;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+  }
+
+  .logo-container {
+    display: flex;
+  flex-direction: column;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .logo-subtext {
+    font-size: 12px;
+    color: #ffe0b2; /* soft orange or any light text color */
+  }
+
+  .search-cart {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .search-input {
+    padding: 6px 10px;
+    border-radius: 5px;
+    border: none;
+    flex: 1;
+    min-width: 200px;
+  }
+
+  .cart-icon {
+    text-decoration: none;
+    font-size: 24px;
+    color: black;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+
+  .profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+  }
+  
+  .profile-icon {
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  .profile-name {
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .profile-menu {
+    display: none;
+    background-color: #fff;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .profile-menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #3f51b5;
+  }
+  
+  .profile-menu a:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Show profile menu when hovered */
+  .profile:hover .profile-menu {
+    display: block;
+  }
+
+  .back-home-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #4CAF50;             /* Green color */
+    font-size: 16px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .back-home-btn:hover {
+    color: #45a049;            /* Darker green on hover */
+  }
+  
+  .back-home-btn i {
+    font-size: 20px;           /* Icon size */
+    margin-right: 8px;         /* Space between icon and text */
+  }
+  
